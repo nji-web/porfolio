@@ -1,0 +1,65 @@
+/* font family */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+html{
+    box-sizing: border-box;
+}
+
+/* design the column */
+.column{
+    width: 50%;
+    margin-left: 350px;
+    padding:0 8px;
+    margin-bottom: 16px;
+}
+/* design the card and container of personel */
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 8px;
+    
+}
+
+.about-section{
+    padding: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.container{
+    padding: 0 16px;
+}
+.container::after , .row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* display button */
+.button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+/* button hover */
+.button:hover{
+    background-color: #555;
+    transition: 0.5s ease;
+    transform: translateY(-6px);
+}
+@media  screen and (max-width: 650px) {
+    .column{
+        width: 100%;
+        display: block;
+    }
+    .column{
+        margin-left: 0px;
+
+    }
+}

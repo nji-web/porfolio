@@ -1,0 +1,104 @@
+/* Remove spaces */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* flex header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 20px 40px;
+}
+.header ul{
+    display: flex;
+    gap: 60px;
+}
+.header ul a{
+    text-decoration: none;
+    color: white;
+}
+.header ul li{
+    list-style-type: none;
+    
+}
+/* hover li */
+.header ul li:hover{
+    transition: 0.3s ease;
+    transform: translateY(-6px);
+}
+/* change text */
+body{
+ font-family: Arial, Helvetica, sans-serif;
+}
+/* container */
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+   
+}
+.text{
+   width: 80%;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.profile img{
+    border-radius:290px;
+    width: 50%;
+    height: auto;
+    margin-top: 50px;
+    animation: slide;
+   
+}
+@keyframes  slide {
+    0%{
+    transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360px);
+    }
+    
+}
+/* style link */
+.text a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.text p{
+    margin-top: 30px;
+   
+}
+.text h1{
+    font-size: 58px;
+    font-weight: bold;
+}
+/* let style button */
+.text button{
+    border: none;
+    color: white;
+    background-color: black;
+    padding: 10px 29px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+/* hover buttton */
+.text button:hover{
+    transition: 0.5s ease;
+    cursor: pointer;
+    transform: translateY(-6px);
+}
+/* styliing footer */
+footer{
+    background-color:black;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-top: 120px;
+}
